@@ -2,6 +2,7 @@ package com.maciejwalkowiak.boot.dropbox;
 
 import com.dropbox.core.DbxRequestConfig;
 import com.dropbox.core.v2.DbxClientV2;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
@@ -10,6 +11,7 @@ import org.springframework.core.env.Environment;
  * Auto-configuration for Dropbox integration.
  */
 @Configuration
+@ConditionalOnProperty(prefix = "dropbox", name = {"client-identifier", "access-token"})
 public class DropboxAutoConfiguration {
 
     @Bean

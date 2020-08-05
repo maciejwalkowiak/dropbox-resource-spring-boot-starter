@@ -1,0 +1,16 @@
+{
+  "properties": [
+    {
+      "defaultValue": null,
+      "name": "dropbox.client-identifier",
+      "description": "Dropbox client identifier.",
+      "type": "java.lang.String"
+    },
+    {
+      "defaultValue": null,
+      "name": "dropbox.access-token",
+      "description": "Dropbox access token.",
+      "type": "java.lang.String"
+    }
+  ]
+}
